@@ -4,10 +4,10 @@
 int main() {
     char in[6];
     fgets(in, sizeof(in), stdin);
-    in[5] = '\0'; // 确保输入字符串以 null 结尾
+    in[5] = '\0'; 
 
-    int m = 10 * ((int)in[0] - '0') + ((int)in[1] - '0'); // 月份转换为数字
-    int d = 10 * ((int)in[3] - '0') + ((int)in[4] - '0'); // 日转换为数字
+    int m = 10 * ((int)in[0] - '0') + ((int)in[1] - '0'); 
+    int d = 10 * ((int)in[3] - '0') + ((int)in[4] - '0');
 
     switch (m) {
         case 1: d < 21 ? printf("Capricorn\n") : printf("Aquarius\n"); break;
